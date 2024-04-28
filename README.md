@@ -25,7 +25,7 @@ bash
 Copy code
 go mod tidy
 Set up PostgreSQL Database:Create a new PostgreSQL database using tools like pgAdmin or the PostgreSQL CLI.
-**Database Connection**
+##Database Connection
 Provide Database Details:Open the .env.example file and provide your PostgreSQL database details:
 env
 Copy code
@@ -41,7 +41,7 @@ Copy code
 go run main.go
 The Gin router runs on port 8080, and the Gorilla Mux router runs on port 8000. Both routers handle CRUD operations for the Post resource.
 Routes
-**The following routes are available in the API:**
+##The following routes are available in the API:
 
 GET /api/users: Get all users.
 GET /api/users/:id: Get a single user by ID.
