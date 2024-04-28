@@ -16,7 +16,7 @@ This is a work-in-progress project aimed at building a CRUD API using the GORM O
 
 ## Initial Setup
 
-1. **Clone the Repository:**
+ **Clone the Repository:**
 
    ```bash
    git clone <repository-url>
@@ -25,7 +25,7 @@ bash
 Copy code
 go mod tidy
 Set up PostgreSQL Database:Create a new PostgreSQL database using tools like pgAdmin or the PostgreSQL CLI.
-Database Connection
+**Database Connection**
 Provide Database Details:Open the .env.example file and provide your PostgreSQL database details:
 env
 Copy code
@@ -39,15 +39,12 @@ Run the Application:
 bash
 Copy code
 go run main.go
-The API server will start running on http://localhost:3000.
+The Gin router runs on port 8080, and the Gorilla Mux router runs on port 8000. Both routers handle CRUD operations for the Post resource.
 Routes
-The following routes are available in the API:
+**The following routes are available in the API:**
 
 GET /api/users: Get all users.
 GET /api/users/:id: Get a single user by ID.
 POST /api/users: Create a new user.
 PUT /api/users/:id: Update an existing user by ID.
 DELETE /api/users/:id: Delete a user by ID.
-Feel free to expand on this README file as you progress with your project. You can add more details about the project structure, middleware usage, error handling, authentication, etc., as needed. Good luck with your project!
-
-sql
